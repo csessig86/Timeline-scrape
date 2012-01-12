@@ -33,12 +33,16 @@ url = 'http://host.madison.com/cb61db52-3d43-11e1-9716-001871e3ce6c.xml?timeline
 http://www.crummy.com/software/BeautifulSoup/#Download
 
 8. Go into your Terminal, navigate to the folder with Python script and run:
+% python timeline.py
+
 This will output a structured CSV file
 
 9. If you haven't already, download Timeline-Setter. It's also really easy to do:
 http://propublica.github.com/timeline-setter/
 
-10. Run "timeline-setter -c timeline.csv" (or whatever your CSV is called)
+10. In your Terminal, run:
+% timeline-setter -c timeline.csv (or whatever your CSV is called)
+
 Note: Sometimes I have to bring the CSV into Excel and save it…Not sure what the problem is but it seems to work after I do that.
 
 11. Tada! You now have Timeline-Setter timeline. See the output folder for a few examples.
