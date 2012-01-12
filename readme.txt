@@ -33,7 +33,6 @@ url = 'http://host.madison.com/cb61db52-3d43-11e1-9716-001871e3ce6c.xml?timeline
 http://www.crummy.com/software/BeautifulSoup/#Download
 
 8. Go into your Terminal, navigate to the folder with Python script and run:
-python timeline.py
 This will output a structured CSV file
 
 9. If you haven't already, download Timeline-Setter. It's also really easy to do:
