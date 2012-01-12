@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheets/timeline-setter.css" rel="stylesheet" />
+    <script src="javascripts/vendor/jquery-min.js"></script>
+    <script src="javascripts/vendor/underscore-min.js"></script>
+    <script src="javascripts/timeline-setter.js"></script>
+  </head>
+  <body style="height: 100%">
+    
+<div id="timeline_setter">
+  <div id="TS-top_matter_container">
+    <div class="TS-controls">
+      <a href="#" class="TS-zoom TS-zoom_in"><span class="TS-controls_inner_text TS-zoom_inner_text">+</span></a> 
+      <a href="#" class="TS-zoom TS-zoom_out"><span class="TS-controls_inner_text TS-zoom_inner_text">-</span></a> 
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="#" class="TS-choose TS-choose_prev">&laquo;&nbsp;<span class="TS-controls_inner_text">Previous</span></a> 
+      <a href="#" class="TS-choose TS-choose_next"><span class="TS-controls_inner_text">Next</span>&nbsp;&raquo;</a>
+    </div>
+    <div class="TS-series_nav_container"></div>
+  </div>
+
+  <div class="TS-notchbar_container">
+    <div class="TS-notchbar"></div>
+  </div>
+  <div id="TS-card_scroller">
+    <div id="TS-card_scroller_inner">
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  TimelineSetter.Timeline.boot([{"date":"Jan 11 2012 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/scott-apparently-obtains-abbey-insurance/article_48724b8f-ea15-5862-9d13-bdc7fd1b9396.html","series":"","html":"<h2 class=\"timeline-img-hed\">Scott apparently obtains abbey insurance</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/c/34/c34f645d-bc8e-5643-9775-098b862958d1/4e9c43b3742cc.preview-100.jpg\" width=\"100\">","timestamp":1326261600000},{"date":"Jan 10 2012 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/monk-ordered-to-leave-independence-abbey/article_6562f244-9fcb-52e5-b94d-df733cedc9b8.html","series":"","html":"<h2 class=\"timeline-img-hed\">Monk ordered to leave Independence abbey</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/c/34/c34f645d-bc8e-5643-9775-098b862958d1/4e9c43b3742cc.preview-100.jpg\" width=\"100\">","timestamp":1326175200000},{"date":"Jan 09 2012 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/ryan-scott-gets-more-time-to-supply-documents/article_57c18520-1cdf-5baf-a89a-61ddbb572af3.html","series":"","html":"<h2 class=\"timeline-img-hed\">Ryan Scott gets more time to supply documents</h2><img src=\"\" width=\"100\">","timestamp":1326088800000},{"date":"Dec 22 2011 CST","display_date":"","description":"","link":"http://wcfcourier.com/document-abbey-files-for-bankruptcy/html_2ea10cb6-2cbd-11e1-b8d1-001871e3ce6c.html","series":"","html":"<h2 class=\"timeline-img-hed\">Document: Abbey files for bankruptcy</h2><img src=\"\" width=\"100\">","timestamp":1324533600000},{"date":"Jan 08 2012 CST","display_date":"","description":"","link":"http://wcfcourier.com/alleged-monk-given-more-time-to-file-bankruptcy-documents/article_22e3b3f4-8f07-500f-8c63-b89824fb3974.html","series":"","html":"<h2 class=\"timeline-img-hed\">Alleged monk given more time to file bankruptcy documents</h2><img src=\"\" width=\"100\">","timestamp":1326002400000},{"date":"Dec 26 2011 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/abbey-scott-entangled-in-financial-issues-in-illinois/article_a5bbd6fa-75e8-5e47-aaa9-196dc0151b69.html","series":"","html":"<h2 class=\"timeline-img-hed\">Abbey - Scott entangled in financial issues in Illinois</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/e/fa/efaab056-36c7-5cb4-89f5-1b9458aac20e/4e9c43a6da2ee.preview-100.jpg\" width=\"100\">","timestamp":1324879200000},{"date":"Jan 06 2012 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/monk-s-bankruptcy-attorney-wants-more-time/article_ad5cafb8-0df4-5a56-857c-f45f81ddf716.html","series":"","html":"<h2 class=\"timeline-img-hed\">Monk's bankruptcy attorney wants more time</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/e/fa/efaab056-36c7-5cb4-89f5-1b9458aac20e/4e9c43a6da2ee.preview-100.jpg\" width=\"100\">","timestamp":1325829600000},{"date":"Dec 18 2011 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/leader-of-buchanan-abbey-not-what-he-claims-investigation-shows/article_e9f87f9d-f726-506a-b32b-9ef65bfd350e.html","series":"","html":"<h2 class=\"timeline-img-hed\">Leader of Buchanan Abbey not what he claims - investigation shows</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/e/fa/efaab056-36c7-5cb4-89f5-1b9458aac20e/4e9c43a6da2ee.preview-100.jpg\" width=\"100\">","timestamp":1324188000000},{"date":"Jan 05 2012 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/alleged-monk-files-for-bankruptcy-in-iowa/article_f7d8d29d-919b-58ee-9837-ec3d3a75f877.html","series":"","html":"<h2 class=\"timeline-img-hed\">Alleged monk files for bankruptcy in Iowa</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/e/fa/efaab056-36c7-5cb4-89f5-1b9458aac20e/4e9c43a6da2ee.preview-100.jpg\" width=\"100\">","timestamp":1325743200000},{"date":"Dec 22 2011 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/illinois-abbey-run-by-independence-monk-files-for-bankruptcy/article_09ea8d8a-2cb2-11e1-aecf-001871e3ce6c.html","series":"","html":"<h2 class=\"timeline-img-hed\">Illinois abbey run by Independence monk files for bankruptcy</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/e/fa/efaab056-36c7-5cb4-89f5-1b9458aac20e/4e9c43a6da2ee.preview-100.jpg\" width=\"100\">","timestamp":1324533600000},{"date":"Jan 02 2012 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/buchanan-abbey-must-bring-facility-up-to-fire-code/article_cd1d34d0-8923-5cca-b376-d1c5bd3a1970.html","series":"","html":"<h2 class=\"timeline-img-hed\">Buchanan Abbey must bring facility up to fire code</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/c/34/c34f645d-bc8e-5643-9775-098b862958d1/4e9c43b3742cc.preview-100.jpg\" width=\"100\">","timestamp":1325484000000},{"date":"Dec 19 2011 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/buchanan-county-checked-out-buyer-of-county-home/article_4df72fd4-5f9c-51c5-a57b-b5daa5c929ef.html","series":"","html":"<h2 class=\"timeline-img-hed\">Buchanan County checked out buyer of county home</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/c/34/c34f645d-bc8e-5643-9775-098b862958d1/4e9c43b3742cc.preview-100.jpg\" width=\"100\">","timestamp":1324274400000},{"date":"Dec 31 2011 CST","display_date":"","description":"","link":"http://wcfcourier.com/news/local/abbey-founder-owes-thousands-in-illinois/article_e5eed786-fe4a-5909-8ed5-9996c3751142.html","series":"","html":"<h2 class=\"timeline-img-hed\">Abbey founder owes thousands in Illinois</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/wcfcourier.com/content/tncms/assets/v3/editorial/e/fa/efaab056-36c7-5cb4-89f5-1b9458aac20e/4e9c43a6da2ee.preview-100.jpg\" width=\"100\">","timestamp":1325311200000},{"date":"Dec 18 2011 CST","display_date":"","description":"","link":"http://wcfcourier.com/documents-ryan-scott-investigation/html_5b7eca06-2827-11e1-bc07-0019bb2963f4.html","series":"","html":"<h2 class=\"timeline-img-hed\">Documents: Ryan Scott investigation</h2><img src=\"\" width=\"100\">","timestamp":1324188000000}], {"interval":""});
+</script>
+<script id="TS-year_notch_tmpl" type="text/jst">
+  <div class="TS-year_notch TS-year_notch_<%= timestamp %>">
+    <span class="TS-year_notch_year_text"><%= human %></span>
+  </div>
+</script>
+<script id="TS-notch_tmpl" type="text/jst">
+  <div class="TS-notch TS-notch_<%= timestamp %> TS-notch_<%= series.replace(/\W/g, "") %> TS-notch_color_<%= topcolor %>"></div>
+</script>
+<script id="TS-series_legend_tmpl" type="text/jst">
+    <div class="TS-series_legend_item TS-series_legend_item_<%= name.replace(/\W/g, "") %>">
+      <span class="TS-series_legend_swatch TS-series_legend_swatch_<%= color %>">&nbsp;</span> <span class="TS-series_legend_text"><%= name %></span>
+    </div>
+</script>
+<script id="TS-card_tmpl" type="text/jst">
+<div class="TS-card_container TS-card_container_<%= (card.get("series") || "").replace(/\W/g, "") %>">
+<div class="TS-css_arrow TS-css_arrow_up TS-css_arrow_color_<%= card.get("topcolor") %>"></div>
+  <div class="TS-item TS-item_color_<%= card.get("topcolor") %>" data-timestamp="<%= card.get("timestamp") %>">
+    <div class="TS-item_label">
+      <% if (!_.isEmpty(card.get("html"))){ %>
+        <div class="TS-item_user_html">
+          <%= card.get("html") %>
+        </div>
+      <% } %>
+      <%= card.get("description") %>
+    </div>
+      <% if (!_.isEmpty(card.get("link"))){ %>
+          <a class="TS-read_btn" target="_blank" href="<%= card.get("link") %>">Read More</a>
+      <% } %>
+
+    <div class="TS-item_year">
+      <span class="TS-item_year_text"><%= (card.get("display_date") || "").length > 0 ? card.get("display_date") : card.get("date") %></span>
+      <div class="TS-permalink">&#8734;</div>
+    </div>
+  </div>
+</div>
+</script>
+  </body>
+</html>

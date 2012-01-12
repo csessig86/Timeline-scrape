@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheets/timeline-setter.css" rel="stylesheet" />
+    <script src="javascripts/vendor/jquery-min.js"></script>
+    <script src="javascripts/vendor/underscore-min.js"></script>
+    <script src="javascripts/timeline-setter.js"></script>
+  </head>
+  <body style="height: 100%">
+    
+<div id="timeline_setter">
+  <div id="TS-top_matter_container">
+    <div class="TS-controls">
+      <a href="#" class="TS-zoom TS-zoom_in"><span class="TS-controls_inner_text TS-zoom_inner_text">+</span></a> 
+      <a href="#" class="TS-zoom TS-zoom_out"><span class="TS-controls_inner_text TS-zoom_inner_text">-</span></a> 
+        &nbsp;&nbsp;&nbsp;&nbsp; 
+      <a href="#" class="TS-choose TS-choose_prev">&laquo;&nbsp;<span class="TS-controls_inner_text">Previous</span></a> 
+      <a href="#" class="TS-choose TS-choose_next"><span class="TS-controls_inner_text">Next</span>&nbsp;&raquo;</a>
+    </div>
+    <div class="TS-series_nav_container"></div>
+  </div>
+
+  <div class="TS-notchbar_container">
+    <div class="TS-notchbar"></div>
+  </div>
+  <div id="TS-card_scroller">
+    <div id="TS-card_scroller_inner">
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  TimelineSetter.Timeline.boot([{"date":"Jan 05 2012 CST","display_date":"","description":"","link":"http://host.madison.com/news/local/govt-and-politics/area-election-filings/article_829a4594-37bc-11e1-8c3c-0019bb2963f4.html","series":"","html":"<h2 class=\"timeline-img-hed\">Area election filings</h2><img src=\"\" width=\"100\">","timestamp":1325743200000},{"date":"Jan 04 2012 CST","display_date":"","description":"","link":"http://host.madison.com/news/local/govt-and-politics/elections/strength-of-dane-county-board-s-conservative-bloc-could-get/article_25e3a116-367b-11e1-bb1e-0019bb2963f4.html","series":"","html":"<h2 class=\"timeline-img-hed\">Strength of Dane County Board's conservative bloc could get reduced</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/host.madison.com/content/tncms/assets/v3/editorial/a/56/a56fe394-75d9-11e0-929d-001cc4c002e0/4dc089ed4ef94.preview-100.jpg\" width=\"100\">","timestamp":1325656800000},{"date":"Jan 04 2012 CST","display_date":"","description":"","link":"http://host.madison.com/news/local/education/local_schools/madison-prep-at-front-and-center-of-school-board-races/article_534767e0-367c-11e1-a2e2-0019bb2963f4.html","series":"","html":"<h2 class=\"timeline-img-hed\">Madison Prep at front and center of School Board races</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/host.madison.com/content/tncms/assets/v3/editorial/7/8a/78a44e76-5ca5-5cd1-a3ff-951030952dd4/4eeff70499ab2.preview-100.jpg\" width=\"100\">","timestamp":1325656800000},{"date":"Dec 31 2011 CST","display_date":"","description":"","link":"http://host.madison.com/news/local/education/local_schools/urban-league-exec-to-take-on-silveira/article_3f3149a4-33b3-11e1-a84a-0019bb2963f4.html","series":"","html":"<h2 class=\"timeline-img-hed\">Urban League exec to take on Silveira</h2><img src=\"\" width=\"100\">","timestamp":1325311200000},{"date":"Jan 04 2012 CST","display_date":"","description":"","link":"http://host.madison.com/news/local/govt-and-politics/county-city-and-school-board-election-filings/article_fd92f8a6-367f-11e1-b7c6-0019bb2963f4.html","series":"","html":"<h2 class=\"timeline-img-hed\">County - city and school board election filings</h2><img src=\"\" width=\"100\">","timestamp":1325656800000},{"date":"Dec 13 2011 CST","display_date":"","description":"","link":"http://host.madison.com/news/local/education/local_schools/mary-burke-to-run-for-madison-school-board/article_e4d389ca-24d7-11e1-a987-001871e3ce6c.html","series":"","html":"<h2 class=\"timeline-img-hed\">Mary Burke to run for Madison School Board</h2><img src=\"http://bloximages.chicago2.vip.townnews.com/host.madison.com/content/tncms/assets/v3/editorial/7/07/707c727c-8d7f-5eea-b074-b24280d7aae8/4e84f43ae9d62.preview-100.jpg\" width=\"100\">","timestamp":1323756000000}], {"interval":""});
+</script>
+<script id="TS-year_notch_tmpl" type="text/jst">
+  <div class="TS-year_notch TS-year_notch_<%= timestamp %>">
+    <span class="TS-year_notch_year_text"><%= human %></span>
+  </div>
+</script>
+<script id="TS-notch_tmpl" type="text/jst">
+  <div class="TS-notch TS-notch_<%= timestamp %> TS-notch_<%= series.replace(/\W/g, "") %> TS-notch_color_<%= topcolor %>"></div>
+</script>
+<script id="TS-series_legend_tmpl" type="text/jst">
+    <div class="TS-series_legend_item TS-series_legend_item_<%= name.replace(/\W/g, "") %>">
+      <span class="TS-series_legend_swatch TS-series_legend_swatch_<%= color %>">&nbsp;</span> <span class="TS-series_legend_text"><%= name %></span>
+    </div>
+</script>
+<script id="TS-card_tmpl" type="text/jst">
+<div class="TS-card_container TS-card_container_<%= (card.get("series") || "").replace(/\W/g, "") %>">
+<div class="TS-css_arrow TS-css_arrow_up TS-css_arrow_color_<%= card.get("topcolor") %>"></div>
+  <div class="TS-item TS-item_color_<%= card.get("topcolor") %>" data-timestamp="<%= card.get("timestamp") %>">
+    <div class="TS-item_label">
+      <% if (!_.isEmpty(card.get("html"))){ %>
+        <div class="TS-item_user_html">
+          <%= card.get("html") %>
+        </div>
+      <% } %>
+      <%= card.get("description") %>
+    </div>
+      <% if (!_.isEmpty(card.get("link"))){ %>
+          <a class="TS-read_btn" target="_blank" href="<%= card.get("link") %>">Read More</a>
+      <% } %>
+
+    <div class="TS-item_year">
+      <span class="TS-item_year_text"><%= (card.get("display_date") || "").length > 0 ? card.get("display_date") : card.get("date") %></span>
+      <div class="TS-permalink">&#8734;</div>
+    </div>
+  </div>
+</div>
+</script>
+  </body>
+</html>
